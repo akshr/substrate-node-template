@@ -23,6 +23,8 @@ version = '2.0.0'
 [dependencies]
 hex-literal = { optional = true, version = '0.3.1' }
 serde = { features = ['derive'], optional = true, version = '1.0.119' }
+# added by akshay for testing libm in smart contract
+libm = { optional = true, version = '0.2.1' }
 
 # local dependencies
 pallet-template = { path = '../pallets/template', default-features = false, version = '3.0.0' }
@@ -72,6 +74,7 @@ runtime-benchmarks = [
 std = [
     'codec/std',
     'serde',
+    'libm',
     'frame-executive/std',
     'frame-support/std',
     'frame-system/std',

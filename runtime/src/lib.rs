@@ -71,6 +71,12 @@ pub type DigestItem = generic::DigestItem<Hash>;
 /// Akshay added => Contracts Pallet
 use pallet_contracts::weights::WeightInfo;
 
+// added by akshay for testing libm in smart contract
+#[cfg(feature = "std")]
+use libm;
+// #[cfg(feature = "std")]
+// pub type EXPF = libm::expf;
+
 // Contracts price units.
 pub const MILLICENTS: Balance = 1_000_000_000;
 pub const CENTS: Balance = 1_000 * MILLICENTS;

@@ -3524,6 +3524,7 @@ dependencies = [
  "frame-system-benchmarking",
  "frame-system-rpc-runtime-api",
  "hex-literal",
+ "libm",
  "pallet-aura",
  "pallet-balances",
  "pallet-contracts",
